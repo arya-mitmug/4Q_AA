@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    
+    <div class="navall">
+        <div class="navdiv">
+            <img id = "textlogo" src="images/textlogo.png">
+            <img id = "biglogo" src="images/biglogo.png">
+            <form action="/search" method="get">
+                <input type="search" id="searchinput" name="q" placeholder="🔍︎ Search">
+            </form>
+        </div>
+        <hr>
+    </div>
+
+    <div id="textdiv">
+        <h1 id="demo">Hello!</h1>
+        <p>Ready to become a Pave the Planet Green member? Fill up the form below:</p>
+    </div>
+
+    <div id="forms">
+        <form onsubmit="return validateForm()">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name">
+            <span id="nameError"></span><br>
+            <label for="birthdate">Birthdate:</label><br>
+            <input type="date" id="birthdate" name="birthdate">
+            <span id="birthError"></span><br>
+
+            <br><label>Sex:</label><br>
+                <input type="radio" name="sex" value="male"> Male
+                <input type="radio" name="sex" value="female"> Female
+            <span id="sexError"></span><br>
+
+            <br><label>Email:</label><br>
+            <input type="email" id="email">
+            <span id="emailError"></span><br>
+
+            <br><label>Password:</label><br>
+            <input type="password" id="password">
+            <span id="passError"></span><br>
+
+            <br><label>Confirm Password:</label><br>
+            <input type="password" id="confirmPassword">
+            <span id="confirmError"></span>
+
+            <br><br><label for="occupation">Current Occupation:</label><br>
+            <select name="occupation" id="occupation">
+                <option value=""></option>
+                <option value="highStudent">High School Student</option>
+                <option value="colStudent">College Student</option>
+                <option value="professional">Professional</option>
+            </select>
+            <span id="occupationError"></span>
+
+            <p>Reason for joining:</p>
+            <input type="checkbox" id="one" name="reason" value="one">
+            <label for="one">To help the environment.</label><br>
+            <input type="checkbox" id="two" name="reason" value="two">
+            <label for="two">To gain community connections.</label><br>
+            <input type="checkbox" id="three" name="reason" value="three">
+            <label for="three">To gain experience.</label><br>
+            <span id="reasonError"></span>
+
+
+            <p>Preferred ways to get involved:</p>
+            <input type="checkbox" id="won" name="prefer" value="won">
+            <label for="won">Logistics</label><br>
+            <input type="checkbox" id="too" name="prefer" value="too">
+            <label for="too">Public Relations</label><br>
+            <input type="checkbox" id="tree" name="prefer" value="tree">
+            <label for="tree">Site Volunteering</label><br>
+            <span id="preferError"></span>
+                
+            <p id="successMsg"></p>
+
+            <input type="submit" id="submit" name="submit" value="If you're ready to Pave the Planet Green, click here!">
+        </form>
+        
+    </div>
+
+    <h3>https://arya-mitmug.github.io/project/</h3>
+
+    <hr>
+    <div id="footer">
+        <p id="footertext1">Pave the Planet Green</p>
+        <p id="footertext2">© 2025. All rights are reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
